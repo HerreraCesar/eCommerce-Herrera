@@ -1,0 +1,71 @@
+.header {
+    background-color: #000000d0 !important;
+    font-weight:700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+    display: grid;
+    grid-template-areas: "logo nav interruptor buscador carrito";
+    grid-template-columns: 15% auto 4% 4% 4%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    backdrop-filter: blur(5px);
+    .header__logo a {
+        text-decoration: none;
+        grid-area: logo;
+        font-size: 46px;
+        color: #ffffff;
+        text-shadow: #000000 2px 2px;
+    }
+    .header__logo a:hover {
+        color: #ecc884;
+    }
+    .header__darkmode {
+        font-size: 190%;
+        grid-area: interruptor;
+        a {
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ecc884;
+        }
+    }
+    .header__search {
+        height: 1.8rem;
+        grid-area: buscador;
+        margin-right: 1rem;
+        padding-top: 5px;
+        box-shadow: none;
+        a {
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ecc884;
+        }
+    }
+    .header__search__btn {
+        @extend .header__search;
+        color: #ffffff;
+        border-color: #ffffff;
+        padding-top: 0px;
+    }
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: #ecc884;
+        border-color: #ecc884;
+    }
+    .header__cart {
+        font-size: 150%;
+        grid-area: carrito;
+        a {
+            color: #ffffff;
+        }
+        a:hover {
+            color: #ecc884;
+        }
+    }
+}

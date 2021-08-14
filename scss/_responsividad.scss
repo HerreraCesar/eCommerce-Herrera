@@ -1,0 +1,230 @@
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .nav-item {
+        margin-left: -60px;
+    }
+    .moving-mouse-holder {
+        display: none;
+    }
+    video {
+        height: 100%;
+        width: auto;
+    }
+    #eslogan {
+        margin-top: 20rem;
+    }
+    .posts {
+        margin-top: 15rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .footer__map {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 40px 0px;
+        padding: 0;
+    }
+    .footer__map iframe {
+        width: 100%;
+    }
+    .footer__brands {
+        padding: auto;
+        margin-bottom: 30px;
+    }
+    .footer__brands p {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer__brands img {
+        margin: 0 0px 40px 0px;
+        padding: 0;
+        justify-items: space-evenly;
+    }
+    .footer__social {
+        padding-bottom: 30px;
+        margin: center;
+        justify-content: center;
+    }
+    .contacto {
+        display: flex;
+        flex-flow: column;
+    }
+    .datos {
+        width: 90%;
+        margin: auto;
+    }
+    .formulario {
+        margin: auto;
+        margin-top: 5rem;
+        width: 90%;
+    }
+    .tituloSeccion-3 {
+        width: 90%;
+        margin: auto;
+        padding: 0px;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .faqs {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+    .accordion {
+        width: 90%;
+        margin: auto;
+        padding: 0px;
+    }
+    .categorias {
+        width: 100%;
+        margin: auto;
+        padding-left: 3rem;
+    }
+    .principal {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: auto;
+    }
+    .box1, .box2 {
+        align-self: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .nav-item {
+        margin-left: -60px;
+    }
+    .moving-mouse-holder {
+        display: none;
+    }
+    .moving-mouse-holder {
+        display: none;
+    }
+    video {
+        height: 100%;
+        width: auto;
+    }
+    #eslogan {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+    .carousel {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .posts {
+        width: 85%;
+        margin: auto;
+        margin-top: 200px;
+    }
+    .posts__box {
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .footer__map {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+        padding: 0rem;
+    }
+    .footer__map iframe {
+        width: 100%;
+    }
+    .footer__brands {
+        margin-left: 10px;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer__brands p {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-left: -10px;
+        font-size: 20px;
+    }
+    .footer__brands img {
+        margin: 0 10px 0 30px;
+        padding: 0;
+        justify-self: center;
+        margin: 10px;
+    }
+    .footer__social {
+        padding-bottom: 30px;
+        margin-right: 80px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .footer__social a {
+        margin-right: 100px;
+    }
+    .contacto {
+        display: flex;
+        flex-flow: column;
+    }
+    .datos {
+        width: 90%;
+        margin: auto;
+    }
+    .formulario {
+        margin-top: 5rem;
+        width: 90%;
+        margin: auto;
+    }
+    .tituloSeccion-3 {
+        width: 90%;
+        margin: auto;
+        padding: 0px;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .faqs {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+    .accordion {
+        width: 90%;
+        margin: auto;
+        padding: 0px;
+    }
+    .categorias {
+        width: 100%;
+        margin: auto;
+        padding-left: 3rem;
+    }
+    .principal {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: auto;
+    }
+    .box1, .box2 {
+        align-self: center;
+        width: 80%;
+    }
+}

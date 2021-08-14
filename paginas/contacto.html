@@ -21,11 +21,11 @@
 <body>
     <header>
         <!--BARRA NAVEGACIÓN-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark header">
             <div class="container-fluid">
                 <!--LOGO EMPRESA-->
                 <div class="header__logo">
-                    <a href="../index.html">STAIL</a>
+                    <a href="index.html">STAIL</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
@@ -51,31 +51,31 @@
                             </ul>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
+                            <a class="nav-link" href="paginas/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="paginas/sobre-nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="preguntas-frecuentes.html" tabindex="-1" aria-disabled="true">FAQs</a>
+                            <a class="nav-link" href="paginas/preguntas-frecuentes.html" tabindex="-1" aria-disabled="true">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                            <a class="nav-link" href="paginas/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
                         </li>
                     </ul>
-                </div>
-                <!--BUSQUEDA-->
-                <form class="d-flex">
-                    <input class="form-control me-2 header__search" type="search" placeholder="Búsqueda" aria-label="Search">
-                    <button class="btn btn-outline-success header__search" type="submit">Buscar</button>
-                </form>
-                <!--MODO OSCURO-->
-                <div class="btn header__darkmode">
-                    <a href="../paginas/error_404.html"><i class="fas fa-toggle-off"></i></a>
-                </div>
-                <!--CARRITO-->
-                <div class="btn header__cart">
-                    <a href="../paginas/error_404.html"><i class="fas fa-shopping-cart"></i></a>
+                    <!--BUSQUEDA-->
+                    <form class="d-flex">
+                        <input class="form-control me-2 header__search" type="search" placeholder="Búsqueda" aria-label="Search">
+                        <button class="btn btn-outline-success header__search__btn" type="submit">Buscar</button>
+                    </form>
+                    <!--MODO OSCURO-->
+                    <div class="btn header__darkmode">
+                        <a href="paginas/error_404.html"><i class="fas fa-toggle-off"></i></a>
+                    </div>
+                    <!--CARRITO-->
+                    <div class="btn header__cart">
+                        <a href="paginas/error_404.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -700,7 +700,7 @@ textarea {
   .moving-mouse-holder {
     display: none;
   }
-  video {
+  .video {
     height: 100%;
     width: auto;
   }
@@ -806,7 +806,7 @@ textarea {
   .moving-mouse-holder {
     display: none;
   }
-  video {
+  .video {
     height: 100%;
     width: auto;
   }

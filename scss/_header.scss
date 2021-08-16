@@ -20,6 +20,8 @@
         font-size: 46px;
         color: #ffffff;
         text-shadow: #000000 2px 2px;
+        padding-left: 1rem;
+        padding-right: 1.5rem;
     }
     .header__logo a:hover {
         color: #ecc884;
@@ -37,7 +39,7 @@
     .header__search {
         height: 1.8rem;
         grid-area: buscador;
-        margin-right: 1rem;
+        margin-right: 1rem !important;
         padding-top: 5px;
         box-shadow: none;
         a {

@@ -8,7 +8,7 @@
   left: 0;
   height: auto;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   display: grid;
   grid-template-areas: "logo nav interruptor buscador carrito";
   grid-template-columns: 15% auto 4% 4% 4%;
@@ -254,6 +254,10 @@
   margin-bottom: 0.3rem;
 }
 
+.footer .footer__social a:hover {
+  color: #ecc884;
+}
+
 .footer .footer__social p {
   text-align: right;
   right: 3.75rem;
@@ -388,8 +392,8 @@
   width: 70%;
   height: 20rem;
   margin: auto;
-  margin-top: 15rem;
-  margin-bottom: 4rem;
+  margin-top: 10rem;
+  margin-bottom: 17rem;
 }
 
 #accordionExample .posts {
@@ -508,7 +512,7 @@
 .nav {
   position: sticky;
   top: 6rem;
-  z-index: 2;
+  z-index: 3;
   width: 70%;
   margin: auto;
   margin-bottom: 2rem;
@@ -522,10 +526,14 @@
   color: wheat;
 }
 
+.nav a:hover {
+  color: #ffffffe8;
+}
+
 #titulo1 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/clasicas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -540,16 +548,18 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
+  z-index: 1;
 }
 
 #titulo2 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/especiales.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,16 +574,17 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo3 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/fiesta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -588,16 +599,17 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo4 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/guirnalda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -612,16 +624,17 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo5 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/paneles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -636,16 +649,17 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo6 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/reflector.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -660,17 +674,18 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo7 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
-  background-image: url(../imagenes/titulos/tiras.jpeg);
+  margin-bottom: 2rem;
+  background-image: url(../imagenes/titulos/tiras.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: center; */
@@ -684,16 +699,17 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 #titulo8 {
-  height: 45rem;
+  height: 20rem;
   margin-TOP: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-image: url(../imagenes/titulos/tubos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -708,17 +724,18 @@
   position: relative;
   z-index: 2;
   margin: auto;
+  width: 70%;
   font-weight: bold;
   display: block;
-  margin-top: -20rem;
-  color: #ffffffa9;
+  margin-top: -10rem;
+  color: #e4e4e4;
 }
 
 .borroso {
-  background-color: rgba(0, 0, 0, 0.205);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(2px);
   width: 100%;
-  height: 45rem;
+  height: 20rem;
   position: relative;
 }
 
@@ -737,13 +754,26 @@
 .card {
   /* transform: scale(0.8); */
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.904);
+  background-color: #ffffffe0;
   margin: 1rem;
   width: auto !important;
 }
 
 .card-img-top {
   border-radius: 1rem;
+}
+
+.card-title {
+  color: #000000ee;
+}
+
+.btn-primary {
+  background-color: #c2c2c2;
+  color: #000000ec;
+}
+
+.btn-primary:hover {
+  background-color: #ecc884;
 }
 
 .categorias {
@@ -864,25 +894,32 @@
   height: auto;
   padding-top: 150px;
   padding-bottom: 150px;
-  display: flex;
-  justify-content: space-evenly;
+}
+
+.contenedor {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100%;
+  grid-gap: 3rem;
 }
 
 .box1, .box2 {
   background-color: #ffffffb9;
   border-radius: 50px;
-  width: 40rem;
-  height: auto;
   backdrop-filter: blur(10px);
-  margin-bottom: 100px;
+  margin-bottom: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 .box1__titulo {
-  align-self: center;
+  /* align-self: center; */
   margin-top: 50px;
+  margin-left: 50px;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -895,9 +932,8 @@
 }
 
 .box2 {
-  border: #ffffff 4px solid;
+  border: #ffffffee 4px solid;
   border-radius: 50px;
-  width: 25rem;
   justify-content: flex-start;
   background-color: #ffffff00;
 }
@@ -958,6 +994,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 70%;
+  margin: auto;
 }
 
 .tituloSeccion-3 {
@@ -965,12 +1003,26 @@
   font-weight: 700;
   margin-bottom: 3rem;
   color: #ffffff;
-  margin-left: 12rem;
 }
 
 .accordion {
-  margin-left: 12rem;
-  width: 59rem;
+  width: 100%;
+  margin-bottom: 18rem;
+  z-index: 1;
+}
+
+.accordion-button {
+  background-color: #ffffffee;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e0e0e0f1;
+  color: #000000ec;
 }
 
 /*Estilos contacto*/
@@ -979,12 +1031,13 @@
   border-radius: 50px;
   color: #363636;
   line-height: 2;
-  width: 32rem;
   height: auto;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   padding: 30px;
+  padding-bottom: 40px;
+  margin-bottom: 18rem;
 }
 
 .formulario__caja {
@@ -1010,19 +1063,21 @@ textarea {
   border-radius: 50px;
   color: #363636;
   line-height: 2;
-  width: 20rem;
+  width: 100%;
   height: auto;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-top: 30px;
   margin-right: 50px;
+  margin-bottom: 18rem;
 }
 
 .datos div {
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .botonFormulario {
@@ -1033,11 +1088,10 @@ textarea {
   color: #424242;
 }
 
-.contacto {
-  display: flex;
-  justify-content: center;
-}
-
+/* .contacto {
+    display: flex;
+    justify-content: center;
+} */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .video {
     height: 100%;

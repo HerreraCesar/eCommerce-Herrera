@@ -89,60 +89,62 @@
                 <li class="breadcrumb-item active" aria-current="page">Formulario</li>
             </ol>
         </nav> -->
-        <!--DATOS IMPORTANTES-->
-        <section class="datos">
-            <div>
-                <h3>TELÉFONOS</h3>
-                <p>+54 3469 000000</p>
-                <p>+54 3469 000000</p>
-            </div>
-            <div>
-                <h3>CORREOS ELECTRÓNICOS</h3>
-                <p>iluminacion.stail@gmail.com</p>
-                <p>herrera.cesar.arg@gmail.com</p>
-            </div>
-            <div>
-                <h3>HORARIOS</h3>
-                <p>lun a vie de 09 a 12</p>
-                <p>sab y dom de 10 a 13</p>
-            </div>
-        </section>
-        <!--FORMULARIO CONTACTO-->
-        <section>
-            <form class="formulario" action="https://formspree.io/f/mdoylgka" method="POST">
-                <div class="formulario__caja">
-                    <h3> ESCRIBINOS</h3>
+        <div class="contenedor">
+            <!--DATOS IMPORTANTES-->
+            <section class="datos">
+                <div>
+                    <h3>TELÉFONOS</h3>
+                    <p>+54 3469 000000</p>
+                    <p>+54 3469 000000</p>
                 </div>
-                <div class="formulario__caja">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                <div>
+                    <h3>CORREOS ELECTRÓNICOS</h3>
+                    <p>iluminacion.stail@gmail.com</p>
+                    <p>herrera.cesar.arg@gmail.com</p>
                 </div>
-                <div class="formulario__caja">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" name="_replyto" placeholder="Ingrese su correo electrónico">
+                <div>
+                    <h3>HORARIOS</h3>
+                    <p>lun a vie de 09 a 12</p>
+                    <p>sab y dom de 10 a 13</p>
                 </div>
-                <div class="formulario__caja">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
-                </div>
-                <div class="formulario__caja">
-                    <label for="horario">Seleccione en que horario prefiere que nos contactemos:</label>
-                    <select name="horario" id="horario">
-                        <option value="mañana">de 09 a 12</option>
-                        <option value="tarde">de 16 a 18</option>
-                    </select>
-                </div>
-                <div class="formulario__caja">
-                    <label for="comentario">Mensaje</label>
-                    <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escriba acá su comentario"></textarea>
-                </div>
-                <div class="flexFila formulario__caja">
-                    <input type="submit" value="Enviar" class="botonFormulario">
-                    <input type="reset" value="Limpiar" class="botonFormulario">
-                    <input type="hidden" name="_subject" value="Nueva consulta - Stail web page">
-                </div>
-            </form>
-        </section>
+            </section>
+            <!--FORMULARIO CONTACTO-->
+            <section>
+                <form class="formulario" action="https://formspree.io/f/mdoylgka" method="POST">
+                    <div class="formulario__caja">
+                        <h3> ESCRIBINOS</h3>
+                    </div>
+                    <div class="formulario__caja">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="formulario__caja">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="_replyto" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="formulario__caja">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
+                    </div>
+                    <div class="formulario__caja">
+                        <label for="horario">Seleccione en que horario prefiere que nos contactemos:</label>
+                        <select name="horario" id="horario">
+                            <option value="mañana">de 09 a 12</option>
+                            <option value="tarde">de 16 a 18</option>
+                        </select>
+                    </div>
+                    <div class="formulario__caja">
+                        <label for="comentario">Mensaje</label>
+                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escriba acá su comentario"></textarea>
+                    </div>
+                    <div class="flexFila formulario__caja">
+                        <input type="submit" value="Enviar" class="botonFormulario">
+                        <input type="reset" value="Limpiar" class="botonFormulario">
+                        <input type="hidden" name="_subject" value="Nueva consulta - Stail web page">
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <!--MAPA-->
@@ -151,7 +153,7 @@
         </div>
         <!--MARCAS-->
         <div class="footer__brands">
-            <P>MARCAS TRABAJADAS</P>
+            <!-- <P>MARCAS TRABAJADAS</P> -->
             <img src="../imagenes/marcas/baw.png" alt="BAW">
             <img src="../imagenes/marcas/jeluz.png" alt="JELUZ">
             <img src="../imagenes/marcas/lucciola.png" alt="LUCCIOLA">
@@ -164,10 +166,10 @@
             <a href="https://www.instagram.com/stail.iluminacion/" target="_blank"><i class="fab fa-instagram"></i></a>
             <br>
             <p>/stail.iluminacion</p>
-            <a href="error_404.html" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="error_404.html"><i class="fab fa-facebook-square"></i></a>
             <br>
             <p>@stail.iluminacion</p>
-            <a href="error_404.html" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="error_404.html"><i class="fab fa-telegram"></i></a>
         </nav>
     </footer>
     

@@ -194,7 +194,7 @@
 }
 .highlight {
     font-family: 'Bebas Neue', cursive;
-    margin-top: 10rem;
+    margin-top: 0rem;
     display: block;
     color: #fff495;
     font-size: 5rem;
@@ -218,7 +218,7 @@
     width: 70%;
     height: 32rem;
     margin: auto;
-    margin-top: 9rem;
+    margin-top: 0rem;
 }
 .animate__animated.animate__flash {
     --animate-duration: 2s;
@@ -350,6 +350,8 @@
     height: 100%;
     padding-top: 150px;
     padding-bottom: -200px;
+    position: relative;
+    z-index: 0;
 }
 .separador {
     height: 20rem;
@@ -422,7 +424,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -444,7 +446,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -466,7 +468,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -510,7 +512,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -532,7 +534,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -554,7 +556,7 @@
     p {
         font-size: 6rem;
         position: relative;
-        z-index: 2;
+        z-index: 1;
         margin: auto;
         width: 70%;
         font-weight: bold;
@@ -657,12 +659,8 @@
 /*Estilos sobre nosotros*/
 
 .principal {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     height: auto;
-    padding-top: 150px;
     padding-bottom: 150px;
 }
 .contenedor {

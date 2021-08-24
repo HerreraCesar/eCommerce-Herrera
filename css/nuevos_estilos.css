@@ -227,17 +227,10 @@
   width: 100%;
   height: auto;
   justify-content: space-evenly;
-  /* p {
-            font-weight: 500;
-            color: #ffffff;
-            align-self: center;
-        } */
 }
 
 .footer .footer__brands img {
-  /* margin-right: 2.5rem;
-            margin-top: 1.25rem; */
-  height: 4.5rem;
+  height: 5vw;
 }
 
 .footer .footer__social {
@@ -329,43 +322,10 @@
   --animate-duration: 2s;
 }
 
-/* .posts {
-    margin: auto;
-    height: auto;
-    color: #000000;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 10rem;
-    .posts__box {
-        margin: 0rem 0rem 2rem 0rem;
-        background-color: #ffffffb9;
-        border-radius: 2rem;
-        width: 18rem;
-        height: 20rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        backdrop-filter: blur(10px);
-        margin-bottom: 6.25rem;
-        p {
-            margin: 0rem 1.8rem 0.5rem 1.8rem;
-        }
-        .titulos {
-            font-weight: bold;
-            align-self: center;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-        .iconos {
-            font-size: 4rem;
-            color: #000000c0;
-            align-self: center;
-            margin-bottom: 0.5rem;
-            margin-top: 4rem;
-        }
-    }
-} */
+.posts {
+  display: none;
+}
+
 .carousel {
   width: 70%;
   margin: auto;
@@ -509,6 +469,10 @@
   height: 20rem;
 }
 
+.flecha {
+  display: none;
+}
+
 .nav {
   position: sticky;
   top: 6rem;
@@ -517,9 +481,11 @@
   margin: auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: #000000c0;
   backdrop-filter: blur(10px);
   border-radius: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .nav a {
@@ -528,6 +494,16 @@
 
 .nav a:hover {
   color: #ffffffe8;
+}
+
+.margin {
+  margin: auto;
+}
+
+.margin a {
+  margin: auto;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 #titulo1 {
@@ -563,7 +539,6 @@
   background-image: url(../imagenes/titulos/especiales.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -588,7 +563,6 @@
   background-image: url(../imagenes/titulos/fiesta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -613,7 +587,6 @@
   background-image: url(../imagenes/titulos/guirnalda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -638,7 +611,6 @@
   background-image: url(../imagenes/titulos/paneles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -663,7 +635,6 @@
   background-image: url(../imagenes/titulos/reflector.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -688,7 +659,6 @@
   background-image: url(../imagenes/titulos/tiras.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -713,7 +683,6 @@
   background-image: url(../imagenes/titulos/tubos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   position: relative;
   display: flex;
   flex-flow: column;
@@ -752,7 +721,6 @@
 }
 
 .card {
-  /* transform: scale(0.8); */
   border-radius: 1rem;
   background-color: #ffffffe0;
   margin: 1rem;
@@ -784,7 +752,6 @@
   width: 70%;
   margin: auto;
   padding: 0%;
-  /* margin-left: 100px; */
   padding-bottom: 100px;
   transition: all 0.5s;
 }
@@ -917,7 +884,6 @@
 }
 
 .box1__titulo {
-  /* align-self: center; */
   margin-top: 50px;
   margin-left: 50px;
   font-size: 24px;
@@ -1069,7 +1035,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* padding-bottom: 30px; */
   padding-top: 30px;
   margin-right: 50px;
   margin-bottom: 18rem;
@@ -1081,17 +1046,18 @@ textarea {
 }
 
 .botonFormulario {
-  width: 275px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.botonFormulario:first-child {
+  margin-right: 1rem;
 }
 
 .datos p {
   color: #424242;
 }
 
-/* .contacto {
-    display: flex;
-    justify-content: center;
-} */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .video {
     height: 100%;
@@ -1105,35 +1071,87 @@ textarea {
     margin: auto;
   }
   .nav-item {
-    margin-left: -60px;
+    margin-left: -45px;
   }
   .moving-mouse-holder {
     display: none;
   }
+  .form-control {
+    margin-left: 20px;
+  }
+  .header__darkmode {
+    margin-left: 8px;
+  }
   .video {
-    height: 100%;
-    width: auto;
+    display: none;
+  }
+  .blur {
+    display: none;
+  }
+  .highlight {
+    z-index: 1;
   }
   #eslogan {
-    margin-top: 20rem;
+    margin-top: -8rem;
+    margin-bottom: 15rem;
+    font-size: 4rem;
+  }
+  #accordionExample {
+    display: none;
   }
   .posts {
-    margin-top: 15rem;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30rem;
+    margin-top: 14rem;
+  }
+  .posts .posts__box {
+    margin: 0rem 0rem 2rem 0rem;
+    background-color: #ffffffb9;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+  }
+  .posts .posts__box p {
+    margin: 0rem 1.8rem 0.5rem 1.8rem;
+  }
+  .posts .posts__box .titulos {
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .posts .posts__box .iconos {
+    font-size: 4rem;
+    color: #000000c0;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
   }
   .footer {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
+    margin-top: -22.5rem;
   }
   .footer__map {
     width: 100%;
     height: auto;
-    margin: 0px 0px 40px 0px;
-    padding: 0;
+    margin: 0px 0px 40px -60px;
   }
   .footer__map iframe {
-    width: 100%;
+    width: 100% !important;
+    height: auto;
   }
   .footer__brands {
     padding: auto;
@@ -1154,41 +1172,43 @@ textarea {
     margin: center;
     justify-content: center;
   }
+  .contenedor {
+    margin-bottom: 30rem;
+    width: 80%;
+  }
   .contacto {
     display: flex;
     flex-flow: column;
   }
   .datos {
-    width: 90%;
+    width: 100%;
+    height: 100%;
     margin: auto;
   }
   .formulario {
     margin: auto;
-    margin-top: 5rem;
-    width: 90%;
+    height: 100%;
+    width: 100%;
   }
   .tituloSeccion-3 {
-    width: 90%;
-    margin: auto;
-    padding: 0px;
-    margin-bottom: 5rem;
-    text-align: center;
+    width: 100%;
+    text-align: start;
   }
   .faqs {
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding: 0px;
-    text-align: center;
+    text-align: start;
   }
   .accordion {
-    width: 90%;
-    margin: auto;
-    padding: 0px;
-  }
-  .categorias {
     width: 100%;
     margin: auto;
-    padding-left: 3rem;
+    padding: 0px;
+    margin-bottom: 30rem;
+  }
+  .categorias {
+    width: 70%;
+    margin: auto;
   }
   .principal {
     display: flex;
@@ -1199,6 +1219,24 @@ textarea {
   .box1, .box2, .box2 {
     align-self: center;
     width: 80%;
+  }
+  .box2 {
+    margin-bottom: 20rem;
+  }
+  .nav {
+    width: 90%;
+    z-index: 2;
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    margin-left: 0;
+  }
+  .articulos {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .separador {
+    height: 30rem;
   }
 }
 
@@ -1208,87 +1246,177 @@ textarea {
     margin: auto;
   }
   .nav-item {
-    margin-left: -60px;
+    margin-left: -45px;
   }
   .moving-mouse-holder {
     display: none;
   }
   .moving-mouse-holder {
     display: none;
+  }
+  .form-control {
+    margin-left: 20px;
+  }
+  .header__darkmode {
+    margin-left: 8px;
   }
   .video {
-    height: 100%;
-    width: auto;
+    display: none;
+  }
+  .blur {
+    display: none;
+  }
+  .highlight {
+    z-index: 1;
+    margin-top: 0rem;
+  }
+  .marco {
+    height: 26rem;
   }
   #eslogan {
-    margin-top: 200px;
-    margin-bottom: 50px;
-    font-size: 50px;
-    letter-spacing: 10px;
+    margin-top: -4.5rem;
+    margin-bottom: 10rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+  #accordionExample {
+    display: none;
   }
   .carousel {
     width: 100%;
     margin-top: 100px;
   }
   .posts {
+    height: auto;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45rem;
     width: 85%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 10rem;
   }
-  .posts__box {
-    height: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
+  .posts .posts__box {
+    margin: 0rem 0rem 2rem 0rem;
+    background-color: #ffffffb9;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+  }
+  .posts .posts__box p {
+    margin: 0rem 1.8rem 0.5rem 1.8rem;
+  }
+  .posts .posts__box .titulos {
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .posts .posts__box .iconos {
+    font-size: 4rem;
+    color: #000000c0;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
   }
   .footer {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
+    margin-top: -40rem;
   }
   .footer__map {
     width: 100%;
     height: auto;
-    margin-bottom: 3rem;
-    padding: 0rem;
+    margin: 0px 0px 20px -60px;
   }
   .footer__map iframe {
-    width: 100%;
+    width: 100% !important;
+    height: auto;
   }
   .footer__brands {
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     margin-bottom: 20px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
   }
   .footer__brands p {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: -10px;
     font-size: 20px;
   }
-  .footer__brands img {
-    margin: 0 10px 0 30px;
-    padding: 0;
+  .footer .footer__brands img {
+    margin: 0 10px 0 10px;
     justify-self: center;
-    margin: 10px;
+    width: 7rem;
+    height: auto;
+    margin: auto;
   }
   .footer__social {
     padding-bottom: 30px;
-    margin-right: 80px;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    margin-right: 60px;
   }
   .footer__social a {
     margin-right: 100px;
   }
+  .nav {
+    display: none;
+  }
+  .categorias {
+    padding-bottom: 0;
+  }
+  #titulo1 p {
+    font-size: 3rem;
+  }
+  #titulo2 p {
+    font-size: 3rem;
+  }
+  #titulo3 p {
+    font-size: 3rem;
+  }
+  #titulo4 p {
+    font-size: 3rem;
+  }
+  #titulo5 p {
+    font-size: 3rem;
+  }
+  #titulo6 p {
+    font-size: 3rem;
+  }
+  #titulo7 p {
+    font-size: 3rem;
+  }
+  #titulo8 p {
+    font-size: 3rem;
+  }
+  .articulos {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .contenedor {
+    margin-bottom: 30rem;
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+  }
   .contacto {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
   }
   .datos {
     width: 90%;
     margin: auto;
+    margin-bottom: 15rem;
   }
   .formulario {
     margin-top: 5rem;
@@ -1299,14 +1427,13 @@ textarea {
     width: 90%;
     margin: auto;
     padding: 0px;
-    margin-bottom: 5rem;
-    text-align: center;
+    margin-bottom: 3rem;
   }
   .faqs {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 0px;
-    text-align: center;
+    padding-bottom: 45rem;
   }
   .accordion {
     width: 90%;
@@ -1327,5 +1454,30 @@ textarea {
   .box1, .box2, .box2 {
     align-self: center;
     width: 80%;
+  }
+  .box2 {
+    margin-bottom: 35rem;
+  }
+  .separador {
+    height: 45rem;
+  }
+  .flecha {
+    display: block;
+    width: 3.8rem;
+    margin: auto;
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    background-color: #0000009a;
+    border-radius: 1rem;
+  }
+  .flecha i {
+    font-size: 2rem;
+    margin: auto;
+    width: auto;
+    height: auto;
+    color: #ffffff;
   }
 }

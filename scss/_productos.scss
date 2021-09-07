@@ -1,0 +1,149 @@
+@import "variables";
+
+.separador {
+    height: 20rem;
+}
+.flecha {
+    display: none;
+}
+.nav {
+    background-color: $fondo_oscuro;
+    backdrop-filter: blur($desenfoque);
+    border-radius: $curvo; 
+    width: 70%;
+    position: sticky;
+    top: 6rem;
+    z-index: 3;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+        color:$destaque;
+    }
+    a:hover {
+        color:$fondo_claro;
+    }
+}
+.margin {
+    margin: auto;
+}
+.margin a{
+    margin: auto;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+$titulos: ("1": "clasicas","2": "especiales","3": "fiesta","4": "guirnalda","5": "paneles","6": "reflector","7": "tiras","8": "tubos");
+@each $numero, $lampara in $titulos {
+    #titulo#{$numero} {
+        background-image: url(../imagenes/titulos/#{$lampara}.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 20rem;
+        position: relative;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-flow: column;
+        p {
+            color: $fondo_claro;
+            width: 70%;
+            position: relative;
+            z-index: 1;
+            margin: auto;
+            margin-top: -10rem;
+            font-size: 6rem;
+            font-weight: bold;
+            display: block;
+        }
+    }
+}
+.borroso {
+    background-color: $fondo_oscuro;
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    z-index: 0;
+}
+.animate__animated.animate__bounceInUp {
+    --animate-delay: 2s;
+}
+.articulos {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.card {
+    background-color: $fondo_claro;
+    border-radius: $curvo;
+    width: auto !important;
+    margin: 1rem;
+}
+.card-img-top {
+    border-radius: $curvo;
+}
+.card-title {
+    color: $fondo_oscuro;
+}
+.btn-primary {
+    background-color: $fondo_claro;
+    color: $fondo_oscuro;
+}
+.btn-primary:hover {
+    background-color: $destaque;
+}
+.categorias {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0%;
+    padding-bottom: 6.25rem;
+    transition: all 0.5s;
+    list-style-type: none;
+}
+.categorias div {
+    border-radius: $curvo;
+    width: 15rem;
+    height: 15rem;
+    margin: 0rem 0.625rem 2rem 0.625rem; 
+    transition: all 0.5s;
+}
+.categorias div li {
+    background-color: $fondo_claro2;
+    backdrop-filter: blur($desenfoque2);
+    color: $fondo_oscuro;
+    border-radius: $curvo;
+    width: 15rem;
+    height: 15rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.categorias :hover {
+    backdrop-filter: blur(0rem);
+    background-color: transparent;
+    transform: scale(1.03);
+}
+.categorias div li:hover {
+    color: transparent;
+}
+
+@each $lampara in bulbo, dicroicas, especiales, fiesta, guirnaldas, paneles, reflectores, tiras, tubos {
+    .#{$lampara} {
+        background-image: url(../imagenes/categorias/#{$lampara}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.categorias div a {
+    text-decoration: none;
+}

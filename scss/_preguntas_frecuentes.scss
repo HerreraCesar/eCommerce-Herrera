@@ -1,0 +1,46 @@
+@import "variables";
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    margin: auto;
+}
+.accordion-item {
+    background-color: $fondo_claro;
+}
+.accordion-item:first-of-type {
+    border-top-right-radius: $curvo;
+    border-top-left-radius: $curvo;
+}
+.accordion-item:last-of-type {
+    border-bottom-right-radius: $curvo;
+    border-bottom-left-radius: $curvo;
+}
+.tituloSeccion-3 {
+    color: $fondo_claro;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.accordion {
+    width: 100%;
+    margin-bottom: 18rem;
+    z-index: 1;
+}
+.accordion-button {
+    background-color: transparent;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    background-color: $fondo_claro2;
+    color: $fondo_oscuro;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: $curvo;
+    border-top-right-radius: $curvo;
+}
